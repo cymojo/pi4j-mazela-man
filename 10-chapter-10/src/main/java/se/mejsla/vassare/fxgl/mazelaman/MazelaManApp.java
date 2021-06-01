@@ -12,10 +12,11 @@ import javafx.scene.control.Label;
 import javafx.scene.input.KeyCode;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
+import se.mejsla.vassare.fxgl.mazelaman.piMapping.PicadeGameApplication;
 
 import java.util.Map;
 
-public class MazelaManApp extends GameApplication {
+public class MazelaManApp extends PicadeGameApplication {
 
     private static final int HEIGHT = 600;
     private static final int WIDTH = 800;
