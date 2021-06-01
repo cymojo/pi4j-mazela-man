@@ -118,6 +118,7 @@
                         <argument>${project.build.directory}/distribution</argument>
                         <argument>--module</argument>
                         <argument>com.pi4j.example/com.pi4j.example.FxglExample</argument>
+                        <argument>se.mejsla.vassare.fxgl.mazelaman/se.mejsla.vassare.fxgl.mazelaman.MazelaManApp</argument>
                     </arguments>
                 </configuration>
             </plugin>
