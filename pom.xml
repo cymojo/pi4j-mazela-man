@@ -43,46 +43,44 @@
         </repository>
     </repositories>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-api</artifactId>
-                <version>${slf4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-simple</artifactId>
-                <version>${slf4j.version}</version>
-            </dependency>
+    <dependencies>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
 
-            <!-- include Pi4J Core -->
-            <dependency>
-                <groupId>com.pi4j</groupId>
-                <artifactId>pi4j-core</artifactId>
-                <version>${pi4j.version}</version>
-            </dependency>
+        <!-- include Pi4J Core -->
+        <dependency>
+            <groupId>com.pi4j</groupId>
+            <artifactId>pi4j-core</artifactId>
+            <version>${pi4j.version}</version>
+        </dependency>
 
-            <!-- include Pi4J Plugins (Platforms and I/O Providers) -->
-            <dependency>
-                <groupId>com.pi4j</groupId>
-                <artifactId>pi4j-plugin-raspberrypi</artifactId>
-                <version>${pi4j.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.pi4j</groupId>
-                <artifactId>pi4j-plugin-pigpio</artifactId>
-                <version>${pi4j.version}</version>
-            </dependency>
+        <!-- include Pi4J Plugins (Platforms and I/O Providers) -->
+        <dependency>
+            <groupId>com.pi4j</groupId>
+            <artifactId>pi4j-plugin-raspberrypi</artifactId>
+            <version>${pi4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.pi4j</groupId>
+            <artifactId>pi4j-plugin-pigpio</artifactId>
+            <version>${pi4j.version}</version>
+        </dependency>
 
-            <!-- FXGL library which includes JavaFX -->
-            <dependency>
-                <groupId>com.github.almasb</groupId>
-                <artifactId>fxgl</artifactId>
-                <version>${fxgl.version}</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+        <!-- FXGL library which includes JavaFX -->
+        <dependency>
+            <groupId>com.github.almasb</groupId>
+            <artifactId>fxgl</artifactId>
+            <version>${fxgl.version}</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
@@ -117,8 +115,8 @@
                         <argument>--module-path</argument>
                         <argument>${project.build.directory}/distribution</argument>
                         <argument>--module</argument>
-                        <argument>com.pi4j.example/com.pi4j.example.FxglExample</argument>
-                        <argument>se.mejsla.vassare.fxgl.mazelaman/se.mejsla.vassare.fxgl.mazelaman.MazelaManApp</argument>
+                        <argument>se.mejsla.vassare.fxgl.mazelaman/se.mejsla.vassare.fxgl.mazelaman.MazelaManApp
+                        </argument>
                     </arguments>
                 </configuration>
             </plugin>
